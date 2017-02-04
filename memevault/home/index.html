@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Meme Vault</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="//use.fontawesome.com/cb2592f0cc.css">
+<link rel="stylesheet" href="/css/memevault.css">
+<script src = "/memevault/memevault.js"></script>
+<link rel="stylesheet" href="/css/navbar.css">
+</head>
+<body>
+<ul><li><a href="/">Home</a></li> <li><a href="/meme">Dankest Meme</a></li> <li><a href="/info">Your Info</a></li> <li><a href="/event/winterevent">Winter Event</a></li> <li><a href="/event/weeklyclip">Weekly Clip</a></li></ul>
+<p class = "info">Access the Meme Vault.</p>
+<p class = "lockstatus locked" id = "lock_status"><i class = "fa fa-lock"></i> Access Denied.</p>
+<input type="text" id="code_input"></input>
+<button id = "unlock_button" onClick="check();">Unlock</button>
+<button disabled onClick="lock();" id = "lock_button">Lock</button>
+<p id = "meme"></p>
+</body>
+</html>
