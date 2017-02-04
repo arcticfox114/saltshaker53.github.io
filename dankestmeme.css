@@ -1,5 +1,5 @@
 window.onload = function() {
-  code = "420";
+  code = "gluten free pasta";
   code_input = document.getElementById("code_input");
   lock_status = document.getElementById("lock_status");
   lock_button = document.getElementById("lock_button");
