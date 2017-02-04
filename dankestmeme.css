@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+.lockstatus {
+	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.lockstatus.locked {
+	color: #FF0000;
+}
+.lockstatus.unlocked {
+	color: #00FF00;
+}
+.info {
+	padding-bottom: 15px;
+}
+.invalid {
+  border: 2px solid #FF0000;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
