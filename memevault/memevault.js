@@ -1,9 +1,9 @@
 window.onload = function()
 {
 	var flash = 0;
-	var colors  = [ "white"];
+	var colors  = [ "black", "red"];
 	var current = 0;
-	var backgroundColors  = [ "black"];
+	var backgroundColors  = [ "red", "orange", "yellow", "green", "blue", "purple"];
 	var backgroundCurrent = 0;
 	var object = document.getElementById("shame");
 	var htmlObject = document.getElementById("html");
@@ -45,7 +45,7 @@ window.onload = function()
 		if (flash == 1)
 		{
 			htmlObject.style.backgroundColor = backgroundColors[backgroundCurrent];
-			backgroundCurrent = (backgroundCurrent + 1) % backgroundColors.length;
+			backgroundCurrent = (backgroundCurrent + 0) % backgroundColors.length;
 		}
 	}, 0);
 }
