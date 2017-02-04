@@ -48,7 +48,7 @@ function showHint() {
 	hint.outerHTML = "Hint: Group Chat";
 }
 function showMeme() {
-	meme.innerHTML = "<img width = \"445\" height = \"445\" src = "/thedankestmeme.jpg\"/>"
+	meme.innerHTML = "<img width = \"445\" height = \"445\" src = \"/thedankestmeme.jpg\"/>"
 }
 function hideMeme() {
 	meme.innerHTML = "";
