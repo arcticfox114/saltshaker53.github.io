@@ -45,7 +45,7 @@ function lock() {
 	hideMeme();
 }
 function showMeme() {
-	meme.innerHTML = "<a href="/unlocked/home/"Access the meme vault /a>"
+	meme.innerHTML = "<img width = \"445\" height = \"445\" src = \"/meme/thedankestmeme.jpg\"/>"
 }
 function hideMeme() {
 	meme.innerHTML = "";
