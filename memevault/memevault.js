@@ -15,7 +15,7 @@ window.onload = function()
 	var warning = document.getElementById("warning");
     function timer ()
     {
-		if (timeLeft != 0)
+		if (timeLeft != 1)
 		{
 			timeLeft = timeLeft - 1;
 			object.innerHTML = "Redirecting to the meme vault in " + timeLeft + " seconds!";
