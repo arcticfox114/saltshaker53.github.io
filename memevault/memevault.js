@@ -7,9 +7,8 @@ window.onload = function()
 	var backgroundCurrent = 0;
 	var object = document.getElementById("shame");
 	var htmlObject = document.getElementById("html");
-  var time = setInterval(timer, 1000);
+        var time = setInterval(timer, 1000);
 	var timeLeft = 10;
-	var audio = document.getElementById("audio");
 	var rip = 0;
 	var title = document.getElementById("title");
 	var warning = document.getElementById("warning");
@@ -18,7 +17,7 @@ window.onload = function()
 		if (timeLeft != 0)
 		{
 			timeLeft = timeLeft - 1;
-			object.innerHTML = "You have " + timeLeft + " seconds to leave!";
+			object.innerHTML = "Redirecting to the meme vault in " + timeLeft + " seconds!";
 		}
 		else
 		{
