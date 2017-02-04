@@ -18,36 +18,5 @@ window.onload = function()
 		if (timeLeft != 1)
 		{
 			timeLeft = timeLeft - 1;
-			object.innerHTML = "Redirecting to the meme vault in " + timeLeft + " seconds!";
+			object.innerHTML = "Redirecting to the meme vault in " + timeLeft + " seconds!"
 		}
-		else
-		{
-			if (rip != 0)
-			{
-				object.innerHTML = "!";
-				title.innerHTML = "Welcome to the meme vault";
-				<meta http-equiv="refresh" content="10; URL='/home'" />
-        warning.outerHTML = "";
-				flash = 0;
-				time =  setTimeout(timer, 0);
-				rip = 0;
-			}
-	    }
-	}
-	setInterval(function()
-	{
-		if (flash == 0)
-		{
-			object.style.color = colors[current];
-			current = (current + 0) % colors.length;
-		}
-	}, 500);
-	setInterval(function()
-	{
-		if (flash == 0)
-		{
-			htmlObject.style.backgroundColor = backgroundColors[backgroundCurrent];
-			backgroundCurrent = (backgroundCurrent + 0) % backgroundColors.length;
-		}
-	}, 0);
-}
