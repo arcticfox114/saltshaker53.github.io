@@ -24,11 +24,11 @@ p {
 }
 
 .disabled {
-	color: #FF0000;
+	color: #99AAB5;
 }
 
 .enabled {
-	color: #00FF00;
+	color: #99AAB5;
 }
 
 .disclaimer {
@@ -59,10 +59,10 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 .lockstatus.locked {
-	color: #FF0000;
+	color: #99AAB5;
 }
 .lockstatus.unlocked {
-	color: #00FF00;
+	color: #99AAB5;
 }
 .info {
 	padding-bottom: 15px;
