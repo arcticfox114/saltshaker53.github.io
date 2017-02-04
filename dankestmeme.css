@@ -4,6 +4,10 @@ body {
 .lockstatus {
 	font-family: 'Raleway', sans-serif;
 }
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
 .lockstatus.locked {
 	color: #FF0000;
 }
