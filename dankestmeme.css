@@ -2,7 +2,7 @@ body {
 	text-align: center;
 }
 .lockstatus {
-	font-family: montserratlight,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 .lockstatus.locked {
 	color: #FF0000;
