@@ -45,7 +45,9 @@ function lock() {
 	hideMeme();
 }
 function showMeme() {
-	meme.innerHTML = "<img width = \"445\" height = \"445\" src = \"/meme/thedankestmeme.jpg\"/>"
+	meme.innerHTML = "<a href="http://facebook.com/yourProfile">
+  <img width = \"445\" height = \"445\" src = \"/meme/thedankestmeme.jpg\"/>
+                          </a>"
 }
 function hideMeme() {
 	meme.innerHTML = "";
