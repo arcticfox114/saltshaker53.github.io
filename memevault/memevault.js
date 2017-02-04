@@ -45,7 +45,7 @@ function lock() {
 	hideMeme();
 }
 function showMeme() {
-	meme.innerHTML = "<a href="/unlocked/home/"Access the meme vault</a>"
+	meme.innerHTML = "<a href="/unlocked/home/"Access the meme vault /a>"
 }
 function hideMeme() {
 	meme.innerHTML = "";
