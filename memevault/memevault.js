@@ -27,7 +27,7 @@ function check() {
 }
 function unlock() {
 	lock_status.className = "lockstatus unlocked";
-	lock_status.innerHTML = "<i class = \"fa fa-unlock\"></i> Unlocked";
+	lock_status.innerHTML = "<i class = \"fa fa-unlock\"></i> Access Granted";
 	code_input.value = "";
 	code_input.disabled = true;
 	lock_button.disabled = false;
@@ -37,7 +37,7 @@ function unlock() {
 }
 function lock() {
 	lock_status.className = "lockstatus locked";
-	lock_status.innerHTML = "<i class = \"fa fa-lock\"></i> Locked";
+	lock_status.innerHTML = "<i class = \"fa fa-lock\"></i> Access Denied";
 	code_input.disabled = false;
 	lock_button.disabled = true;
 	unlock_button.disabled = false;
