@@ -1,11 +1,7 @@
 body {
 	text-align: center;
 }
-.lockstatus {
-	font-family: 'Raleway', sans-serif;
-}
-}
-p {
+* {
 	font-family: 'Raleway', sans-serif;
 }
 .lockstatus.locked {
