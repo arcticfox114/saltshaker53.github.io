@@ -1,0 +1,22 @@
+body {
+	text-align: center;
+}
+* {
+	font-family: 'Raleway', sans-serif;
+}
+.lockstatus.locked {
+	color: #FF0000;
+}
+.lockstatus.unlocked {
+	color: #00FF00;
+}
+.info {
+	padding-bottom: 15px;
+}
+.invalid {
+  border: 2px solid #FF0000;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
