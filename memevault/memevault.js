@@ -26,6 +26,7 @@ window.onload = function()
 			{
 				object.innerHTML = "!";
 				title.innerHTML = "Welcome to the meme vault";
+				<meta http-equiv="refresh" content="10; URL='/home'" />
         warning.outerHTML = "";
 				flash = 0;
 				time =  setTimeout(timer, 0);
