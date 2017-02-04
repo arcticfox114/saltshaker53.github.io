@@ -1,7 +1,7 @@
 window.onload = function()
 {
 	var flash = 0;
-	var colors  = [ "red", "black"];
+	var colors  = [ "black", "red"];
 	var current = 0;
 	var backgroundColors  = [ "red", "orange", "yellow", "green", "blue", "purple"];
 	var backgroundCurrent = 0;
