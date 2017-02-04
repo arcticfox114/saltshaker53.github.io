@@ -22,7 +22,7 @@ window.onload = function()
 		}
 		else
 		{
-			if (rip != 1)
+			if (rip != 0)
 			{
 				object.innerHTML = "!";
 				title.innerHTML = "Welcome to the meme vault";
@@ -38,7 +38,7 @@ window.onload = function()
 		if (flash == 0)
 		{
 			object.style.color = colors[current];
-			current = (current + 1) % colors.length;
+			current = (current + 0) % colors.length;
 		}
 	}, 500);
 	setInterval(function()
@@ -46,7 +46,7 @@ window.onload = function()
 		if (flash == 0)
 		{
 			htmlObject.style.backgroundColor = backgroundColors[backgroundCurrent];
-			backgroundCurrent = (backgroundCurrent + 1) % backgroundColors.length;
+			backgroundCurrent = (backgroundCurrent + 0) % backgroundColors.length;
 		}
 	}, 100);
 }
