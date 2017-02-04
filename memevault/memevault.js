@@ -1,52 +1,52 @@
-window.onload = function() {
-  code = "i solemnly swear i'm upto no good";
-  code_input = document.getElementById("code_input");
-  lock_status = document.getElementById("lock_status");
-  lock_button = document.getElementById("lock_button");
-  unlock_button = document.getElementById("unlock_button");
-  hint = document.getElementById("hint");
-  meme = document.getElementById("meme");
-  locked = true;
-};
-function check() {
-	if (locked)
-	{
-		if (code_input.value == code)
-		{
-      if (code_input.className == "invalid")
-      {
-        code_input.className = "";
-      }
-			unlock();
-		}
-    else
+window.onload = function()
+{
+	var flash = 0;
+	var colors  = [ "red", "black"];
+	var current = 0;
+	var backgroundColors  = [ "red", "orange", "yellow", "green", "blue", "purple"];
+	var backgroundCurrent = 0;
+	var object = document.getElementById("shame");
+	var htmlObject = document.getElementById("html");
+  var time = setInterval(timer, 1000);
+	var timeLeft = 10;
+	var audio = document.getElementById("audio");
+	var rip = 0;
+	var title = document.getElementById("title");
+	var warning = document.getElementById("warning");
+    function timer ()
     {
-      code_input.className = "invalid";
-    }
+		if (timeLeft != 0)
+		{
+			timeLeft = timeLeft - 1;
+			object.innerHTML = "Redirecting to the meme vault in " + timeLeft + " seconds!";
+		}
+		else
+		{
+			if (rip != 1)
+			{
+				object.innerHTML = "!";
+				title.innerHTML = "Welcome to the meme vault";
+        warning.outerHTML = "";
+				flash = 0;
+				time =  setTimeout(timer, 0);
+				rip = 0;
+			}
+	    }
 	}
-}
-function unlock() {
-	lock_status.className = "lockstatus unlocked";
-	lock_status.innerHTML = "<i class = \"fa fa-unlock\"></i> Access Granted";
-	code_input.value = "";
-	code_input.disabled = true;
-	lock_button.disabled = false;
-	unlock_button.disabled = true;
-	locked = false;
-	showMeme();
-}
-function lock() {
-	lock_status.className = "lockstatus locked";
-	lock_status.innerHTML = "<i class = \"fa fa-lock\"></i> Access Denied";
-	code_input.disabled = false;
-	lock_button.disabled = true;
-	unlock_button.disabled = false;
-	locked = true;
-	hideMeme();
-}
-function showMeme() {
-	meme.innerHTML = "<img width = \"445\" height = \"445\" src = \"/memevault/meme1.jpg\"/>"
-}
-function hideMeme() {
-	meme.innerHTML = "";
+	setInterval(function()
+	{
+		if (flash == 0)
+		{
+			object.style.color = colors[current];
+			current = (current + 1) % colors.length;
+		}
+	}, 500);
+	setInterval(function()
+	{
+		if (flash == 0)
+		{
+			htmlObject.style.backgroundColor = backgroundColors[backgroundCurrent];
+			backgroundCurrent = (backgroundCurrent + 1) % backgroundColors.length;
+		}
+	}, 100);
 }
