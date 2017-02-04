@@ -1,13 +1,13 @@
 window.onload = function()
 {
 	var flash = 0;
-	var colors  = [ "black"];
+	var colors  = [ "white", "black"];
 	var current = 0;
 	var backgroundColors  = [ "white"];
 	var backgroundCurrent = 0;
 	var object = document.getElementById("shame");
 	var htmlObject = document.getElementById("html");
-  var time = setInterval(timer, 1000);
+        var time = setInterval(timer, 1000);
 	var timeLeft = 10;
 	var audio = document.getElementById("audio");
 	var rip = 0;
@@ -48,5 +48,5 @@ window.onload = function()
 			htmlObject.style.backgroundColor = backgroundColors[backgroundCurrent];
 			backgroundCurrent = (backgroundCurrent + 0) % backgroundColors.length;
 		}
-	}, 100);
+	}, 0);
 }
