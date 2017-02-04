@@ -21,31 +21,31 @@ window.onload = function()
 		}
 		else
 		{
-			if (rip != 1)
+			if (rip != 0)
 			{
 				object.innerHTML = "I WARNED YOU! YOU SHOULD OF LEFT! YOU NEVER EVEN SHOULD OF CAME HERE IN THE FIRST PLACE IF YOU READ THE URL!";
 				title.innerHTML = "SHOULD OF LEFT!";
         warning.outerHTML = "";
-				flash = 1;
+				flash = 0;
 				time =  setTimeout(timer, 0);
-				rip = 1;
+				rip = 0;
 			}
 	    }
 	}
 	setInterval(function()
 	{
-		if (flash == 1)
+		if (flash == 0)
 		{
 			object.style.color = colors[current];
-			current = (current + 1) % colors.length;
+			current = (current + 0) % colors.length;
 		}
-	}, 500);
+	}, 0);
 	setInterval(function()
 	{
 		if (flash == 1)
 		{
 			htmlObject.style.backgroundColor = backgroundColors[backgroundCurrent];
-			backgroundCurrent = (backgroundCurrent + 1) % backgroundColors.length;
+			backgroundCurrent = (backgroundCurrent + 0) % backgroundColors.length;
 		}
-	}, 100);
+	}, 0);
 }
