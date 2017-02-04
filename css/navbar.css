@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #2C2F33;
 }
 li {
     float: left;
@@ -18,5 +18,5 @@ li a {
     text-decoration: none;
 }
 .active {
-	background-color: #35B524;
+	background-color: #2C2F33;
 }
