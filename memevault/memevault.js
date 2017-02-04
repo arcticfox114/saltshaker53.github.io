@@ -45,7 +45,7 @@ function lock() {
 	hideMeme();
 }
 function showMeme() {
-	meme.innerHTML = "<a href="totalfreedom.me">The Meme Vault</a>"
+	meme.innerHTML = "<img width = \"445\" height = \"445\" src = \"/memevault/meme1.jpg\"/>"
 }
 function hideMeme() {
 	meme.innerHTML = "";
